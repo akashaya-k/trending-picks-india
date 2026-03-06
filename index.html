@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trending Picks India — Curated trending product recommendations, Pinterest content, and affiliate marketing for smart Indian shoppers.">
+    <title>Trending Picks India — Curated Trending Products &amp; Recommendations</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Header ────────────────────────────────── */
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #ff6a00, #ee0979, #ff6a00);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 4s linear infinite;
+        }
+
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+
+        header p.tagline {
+            margin-top: 12px;
+            font-size: 1.15rem;
+            color: #b0afc5;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        /* ── Main Content ──────────────────────────── */
+        main {
+            flex: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 24px 60px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 36px 32px;
+            margin-bottom: 28px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(238, 9, 121, 0.15);
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 14px;
+        }
+
+        .card p, .card li {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: #c5c4d4;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+        .card ul li::before {
+            content: "✦ ";
+            color: #ee0979;
+        }
+
+        /* ── Pinterest Badge ───────────────────────── */
+        .pinterest-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 16px;
+            padding: 10px 20px;
+            background: rgba(230, 0, 35, 0.12);
+            border: 1px solid rgba(230, 0, 35, 0.3);
+            border-radius: 40px;
+            color: #ff5c7a;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: background 0.25s;
+        }
+
+        .pinterest-badge:hover {
+            background: rgba(230, 0, 35, 0.22);
+        }
+
+        .pinterest-badge svg {
+            width: 18px;
+            height: 18px;
+            fill: #ff5c7a;
+        }
+
+        /* ── Contact ───────────────────────────────── */
+        .contact-section {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .contact-section a {
+            color: #ee0979;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Footer ────────────────────────────────── */
+        footer {
+            text-align: center;
+            padding: 28px 20px;
+            font-size: 0.85rem;
+            color: #7a789a;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        footer a {
+            color: #b0afc5;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        /* ── Responsive ────────────────────────────── */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            header p.tagline { font-size: 1rem; }
+            .card { padding: 26px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trending Picks India</h1>
+        <p class="tagline">
+            Your go-to destination for curated, trending product recommendations across India — handpicked deals, honest picks, and smart shopping inspiration.
+        </p>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section class="card" id="about">
+            <h2>What We Do</h2>
+            <p>
+                Trending Picks India is a product discovery platform that helps Indian shoppers find the best trending products — from gadgets and home essentials to fashion and lifestyle picks. We research, compare, and curate so you don't have to.
+            </p>
+            <ul>
+                <li>Handpicked trending products across popular categories</li>
+                <li>Honest recommendations backed by research &amp; reviews</li>
+                <li>Affiliate-powered links to top marketplaces like Amazon India</li>
+                <li>Regular updates so you never miss what's trending</li>
+            </ul>
+        </section>
+
+        <!-- Pinterest Section -->
+        <section class="card" id="pinterest">
+            <h2>Follow Us on Pinterest</h2>
+            <p>
+                We publish eye-catching pins and boards featuring our top product picks, seasonal trends, and curated shopping guides. Follow us on Pinterest for daily inspiration and discover products through beautifully designed visual content.
+            </p>
+            <a href="#" class="pinterest-badge" aria-label="Follow on Pinterest">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.024 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.993 3.995-.282 1.193.599 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.084.345-.091.375-.293 1.199-.334 1.363-.053.225-.174.271-.402.163-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                Follow on Pinterest
+            </a>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="card contact-section" id="contact">
+            <h2>Get in Touch</h2>
+            <p>
+                Have a question, suggestion, or collaboration idea?<br>
+                Reach out to us at <a href="mailto:contact@trendingpicksindia.com">contact@trendingpicksindia.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Trending Picks India. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
